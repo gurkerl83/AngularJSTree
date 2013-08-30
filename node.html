@@ -2,12 +2,12 @@
   {{$parent.tree.title}}
 
   <span class="node-actions">
-    <form ng-submit="add_child($parent.tree, node_title)">
-      <input type="text" ng-model="node_title">
+    <form ng-submit="add_child($parent.tree)">
+      <input type="text" ng-model="input.title">
       <button>+</button>
     </form>
 
-    <!-- <button ng-click="delete_child($parent.tree, $parent.$parent.tree)">-</button> -->
+    <button ng-click="delete_child($parent.tree)">-</button>
   </span>
 
 </div>
